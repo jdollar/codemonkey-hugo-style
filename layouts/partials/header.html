@@ -4,9 +4,9 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width" />
     <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/font-hack/2.020/css/hack-extended.min.css">
+    <link rel="stylesheet" href="{{ .Site.Params.materialize.css | default .Site.Data.default.materialize.css }}">
+    <link rel="stylesheet" href="{{ .Site.Params.materialicons.css | default .Site.Data.default.materialicons.css }}">
+    <link rel="stylesheet" href="{{ .Site.Params.font.css | default .Site.Data.default.font.css }}">
     <link rel="stylesheet" href="/css/codemonkey.css">
   </head>
 

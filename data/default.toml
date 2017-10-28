@@ -1,0 +1,15 @@
+[materialize]
+  css = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+  js = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"
+
+[fontawesome]
+  js = "https://use.fontawesome.com/694c82135e.js"
+
+[font]
+  css = "//cdn.jsdelivr.net/npm/hack-font/build/web/hack.css"
+
+[materialicons]
+  css = "https://fonts.googleapis.com/icon?family=Material+Icons"
+
+[jquery]
+  js = "https://code.jquery.com/jquery-3.2.1.min.js"

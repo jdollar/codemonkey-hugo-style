@@ -19,7 +19,7 @@
     <ul>
       {{ range first 10 .Site.Pages }}
         {{ if ne .Type "page" }}
-          <li>{{ .Date.Format "Monday, July 7, 2006" }} : <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          <li>{{ .Date.Local }} : <a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
       {{ end }}
     </ul>

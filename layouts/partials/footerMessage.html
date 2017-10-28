@@ -1,1 +1,3 @@
-<p>Generated with <a href="{{ .Site.Data.codemonkey.links.hugo }}">Hugo Static Site Generator</a>
+{{ with .Site.Data.links.hugo }}
+  <p>Generated with <a href="{{ .link }}">{{ .text }}</a>
+{{ end }}

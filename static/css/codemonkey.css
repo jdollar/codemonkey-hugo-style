@@ -2,6 +2,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 83%;
+  background: #DEE8DE;
+  color: #383838;
   font-family: Hack, monospace;
 }
 
@@ -41,6 +43,14 @@ footer {
 .bannerHeader > h4 {
   display: inline;
   margin: 0;
+}
+
+.pagination > li.active {
+  background: #FFFFFF;
+}
+
+.pagination > li.active > a {
+  color: #383838;
 }
 
 nav .brand-logo {
