@@ -24,8 +24,13 @@ footer {
 }
 
 .banner-line-number {
+  display: inline;
   background-color: #262626;
   color: #9fafaf;
+}
+
+.banner-title {
+  display: inline;
 }
 
 .zenburn-text {
@@ -33,12 +38,8 @@ footer {
   color: #dcdccc;
 }
 
-/*.solarized-dark-text {
-  background-color: #002b36;
-  color: #93a1a1;
-}*/
-
 .bannerHeader > h4 {
+  display: inline;
   margin: 0;
 }
 
@@ -61,54 +62,6 @@ nav .brand-logo {
 .green-primary-dark {
   background-color: #1F5433;
   color: #1F5433;
-}
-
-.pagination li.active {
-  background-color: #1F5433;
-  color: #507F62;
-}
-
-.green-primary-light {
-  background-color: #719880;
-  color: #719880;
-}
-
-.blue-secondary {
-  background-color: #47636E;
-  color: #47636E;
-}
-
-.blue-secondary-dark {
-  background-color: #1D3C48;
-  color: #47636E;
-}
-
-.pagination > li > a {
-  color: #47636E;
-}
-
-.pagination li.disabled a {
-  color: #444;
-}
-
-.blue-secondary-light {
-  background-color: #637B84;
-  color: #637B84;
-}
-
-.green-compliment {
-  background-color: #86A065;
-  color: #86A065;
-}
-
-.green-compliment-dark {
-  background-color: #4D6927;
-  color: #4D6927;
-}
-
-.green-compliment-light {
-  background-color: #AAC08E;
-  color: #AAC08E;
 }
 
 @keyframes cursor {

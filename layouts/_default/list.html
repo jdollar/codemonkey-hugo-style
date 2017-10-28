@@ -2,7 +2,7 @@
   <section class="container" id="list">
       {{ $paginator := .Paginate (.Data.Pages.ByDate.Reverse) 10 }}
       {{ range $paginator.Pages }}
-        <div class="card hoverable zenburn-text rounded-borders">
+        <div class="card hoverable rounded-borders">
           <div class="card-content center-align">
             <span class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
             <div class="left-align">
@@ -24,7 +24,7 @@
             {{ if eq $paginator.PageNumber .PageNumber }}
               <li class="active"><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
             {{ else }}
-              <li><a class="blue-secondary-dark" href="{{ .URL }}">{{ .PageNumber }}</a></li>
+              <li><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
             {{ end }}
           {{ end }}
 

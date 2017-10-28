@@ -1,7 +1,8 @@
 <div>
   <div class="zenburn-text bannerHeader valign-wrapper">
-    <div class="center-block">
-      <h4 class="valign">{{ .Site.Params.bannerText }}<span class="cursor">&nbsp;</span></h4>
+    <div class="center-block valign">
+      <h5 class="banner-line-number">1</h5>
+      <h4 class="banner-title">{{ .Site.Params.bannerText }}<span class="cursor">&nbsp;</span></h4>
     </div>
   </div>
   <ul id="dropdownOptions" class="dropdown-content">
@@ -29,7 +30,7 @@
         <li><a href="{{ .link }}">{{ .text }}</a></li>
     {{ end }}
   </ul>
-  
+
   <nav>
     <div class="nav-wrapper grey-text text-lighten-4 green-primary-dark">
       <a href="{{ .Site.BaseURL }}" class="brand-logo left-pad-1">{{ .Site.Params.title }}</a>
