@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="{{ .Site.Params.materialize.css | default .Site.Data.default.materialize.css }}">
     <link rel="stylesheet" href="{{ .Site.Params.materialicons.css | default .Site.Data.default.materialicons.css }}">
@@ -12,4 +12,5 @@
 
   <body>
     {{ partial "banner.html" . }}
-    <div class="bodyWrapper">
+    <main>
+      <div class="bodyWrapper">

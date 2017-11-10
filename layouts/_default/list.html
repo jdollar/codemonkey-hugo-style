@@ -2,9 +2,9 @@
   <section class="container" id="list">
       {{ $paginator := .Paginate (.Data.Pages.ByDate.Reverse) 10 }}
       {{ range $paginator.Pages }}
-        <div class="card hoverable rounded-borders">
-          <div class="card-content center-align">
-            <span class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        <div class="post-list-item-container z-depth-4">
+          <div class="center-align">
+            <span><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
             <div class="left-align">
               {{ .Description | markdownify }}
             </div>

@@ -1,5 +1,6 @@
 
-    </div>
+      </div>
+    </main>
     <footer class="container center-align">
         <hr/>
         {{ partial "footerMessage.html" . }}
@@ -9,9 +10,9 @@
     <script src="{{ .Site.Params.materialize.js | default .Site.Data.default.materialize.js }}"></script>
     <script src="{{ .Site.Params.fontawesome.js | default .Site.Data.default.fontawesome.js }}"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-          $('.dropdown-button').dropdown()
-        })
+        // $(document).ready(function() {
+        //   $('.dropdown-button').dropdown()
+        // })
     </script>
   </body>
 </html>

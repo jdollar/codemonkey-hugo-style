@@ -7,10 +7,26 @@ html, body {
   font-family: Hack, monospace;
 }
 
+.sidenav {
+  background: #D4D4D9;
+  color: #0F293E;
+}
+
 .bannerHeader {
   padding: 0;
   margin: 0;
   height: 200px;
+  position: relative;
+}
+
+.menu-item {
+  top: 10px;
+  left: 10px;
+  position: absolute;
+}
+
+.white-icon {
+  color: #FFFFFF;
 }
 
 .bodyWrapper {
@@ -53,13 +69,6 @@ footer {
   color: #383838;
 }
 
-nav .brand-logo {
-  padding-left: 1%;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .rounded-borders {
   border-radius: 5px;
 }
@@ -72,6 +81,21 @@ nav .brand-logo {
 .green-primary-dark {
   background-color: #1F5433;
   color: #1F5433;
+}
+
+.post-list-item-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+header, main, footer {
+ padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+ header, main, footer {
+   padding-left: 0;
+ }
 }
 
 @keyframes cursor {
