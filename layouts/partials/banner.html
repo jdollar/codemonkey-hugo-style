@@ -1,22 +1,15 @@
 <header>
   <div class="zenburn-text bannerHeader valign-wrapper">
     <div class="hide-on-large-only menu-item">
-      <a class="dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdownOptions"><i class="material-icons white-icon">list</i></a>
+      <a class="sidebar-button" href="#!" data-beloworigin="true" data-activates="slide-out"><i class="material-icons white-icon">list</i></a>
     </div>
     <div class="center-block valign">
       <h4 class="banner-title">{{ .Site.Params.bannerText }}<span class="cursor">&nbsp;</span></h4>
     </div>
   </div>
-  <ul id="dropdownOptions" class="dropdown-content">
-    {{ with .Site.Params }}
-      {{ range .navbar }}
-        <li><a href="{{ .link }}">{{ .text }}</a></li>
-      {{ end }}
-    {{ end }}
-  </ul>
 
   <div>
-    <ul class="side-nav sidenav fixed">
+    <ul id="slide-out" class="side-nav sidenav fixed">
       <li>
         <a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a>
       </li>
@@ -24,32 +17,12 @@
       {{ with .Site.Params }}
         {{ range .navbar }}
           {{ if isset . "tooltip" }}
-            <li class="hide-on-med-and-down tooltipped" data-position="right" data-delay="50" data-tooltip="{{ .tooltip }}"><a href="{{ .link }}"><i class="material-icons fa {{ .icon }}"></i>{{ .text }}</a></li>
+            <li data-position="right" data-delay="50" data-tooltip="{{ .tooltip }}"><a href="{{ .link }}"><i class="material-icons fa {{ .icon }}"></i>{{ .text }}</a></li>
           {{ else }}
-            <li class="hide-on-med-and-down"><a href="{{ .link }}"><i class="material-icons fa {{ .icon }}"></i>{{ .text }}</a></li>
+            <li><a href="{{ .link }}"><i class="material-icons fa {{ .icon }}"></i>{{ .text }}</a></li>
           {{ end }}
         {{ end }}
       {{ end }}
     </ul>
   </div>
-
-  <!-- <nav>
-    <div class="nav-wrapper">
-      <ul class="side-nav sidenav fixed">
-        <li>
-          <a href="{{ .Site.BaseURL }}">{{ .Site.Params.title }}</a>
-        </li>
-
-        {{ with .Site.Params }}
-          {{ range .navbar }}
-            {{ if isset . "tooltip" }}
-              <li class="hide-on-med-and-down tooltipped" data-position="right" data-delay="50" data-tooltip="{{ .tooltip }}"><a href="{{ .link }}"><i class="material-icons fa {{ .icon }}"></i>{{ .text }}</a></li>
-            {{ else }}
-              <li class="hide-on-med-and-down"><a href="{{ .link }}"><i class="material-icons fa {{ .icon }}"></i>{{ .text }}</a></li>
-            {{ end }}
-          {{ end }}
-        {{ end }}
-      </ul>
-    </div>
-  </nav> -->
 </header>
