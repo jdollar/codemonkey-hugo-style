@@ -2,13 +2,13 @@ html, body {
   margin: 0;
   padding: 0;
   height: 83%;
-  background: #DEE8DE;
+  background: #f0f5f0;
   color: #383838;
   font-family: Hack, monospace;
 }
 
 .sidenav {
-  background: #D4D4D9;
+  background: #f1f1f3;
   color: #0F293E;
 }
 

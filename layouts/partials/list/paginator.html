@@ -1,0 +1,25 @@
+<div class="row">
+  <ul class="pagination">
+    {{ if .paginator.HasPrev }}
+      <li><a href="{{ .paginator.Prev.URL }}"><i class="material-icons">chevron_left</i></a></li>
+    {{ else }}
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    {{ end }}
+
+    {{ $currentPageNumber := .currentPageNumber }}
+    {{ range .paginator.Pagers }}
+      {{ if eq .PageNumber $currentPageNumber }}
+        <li class="active"><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
+      {{ else }}
+        <li><a href="{{ .URL }}">{{ .PageNumber }}</a></li>
+      {{ end }}
+    {{ end }}
+        <!-- <li><a href="{{ .URL }}">{{ .PageNumber }}</a></li> -->
+
+    {{ if .paginator.HasNext }}
+      <li><a href="{{ .paginator.Next.URL }}"><i class="material-icons">chevron_right</i></a></li>
+    {{ else }}
+      <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+    {{ end }}
+  </ul>
+</div>
