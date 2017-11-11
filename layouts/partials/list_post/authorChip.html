@@ -1,0 +1,15 @@
+{{ if and (isset .PageParams "author_image") (isset .PageParams "author") }}
+  <div class="chip">
+    <img src="images/{{ .PageParams.author_image }}">
+    {{ .PageParams.author }}
+  </div>
+{{ else if isset .PageParams "author_image" }}
+  <div class="chip">
+    <img src="images/{{ .PageParams.author_image }}">
+    Author
+  </div>
+{{ else if isset .PageParams "author" }}
+  <div class="chip">
+    {{ .PageParams.author }}
+  </div>
+{{ end }}

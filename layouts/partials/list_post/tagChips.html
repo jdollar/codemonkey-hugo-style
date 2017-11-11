@@ -1,0 +1,10 @@
+{{ if isset .PageParams "tags" }}
+  {{ if isset . "separator" }}
+    {{ .separator }}
+  {{ end }}
+  {{ range .PageParams.tags }}
+    <div class="chip">
+      {{ . }}
+    </div>
+  {{ end }}
+{{ end }}

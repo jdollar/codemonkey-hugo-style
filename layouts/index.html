@@ -20,6 +20,8 @@
         <div class="post-list-item-empty"></div>
         <div class="post-list-item">
           <h5>{{ .Title }}</h5>
+          {{ partial "list_post/authorChip.html" (dict "PageParams" .Params) }}
+          {{ partial "list_post/tagChips.html" (dict "PageParams" .Params "separator" "|") }}
           <p>{{ .Summary }}</p>
         </div>
         <div style="text-align: right">
