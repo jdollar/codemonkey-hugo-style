@@ -2,8 +2,10 @@
       </div>
     </main>
     <footer class="container center-align">
-        <hr/>
-        {{ partial "footerMessage.html" . }}
+        <div class="post-list-item-empty"></div>
+        <div>
+          {{ partial "footerMessage.html" . }}
+        </div>
     </footer>
 
     <script type="text/javascript" src="{{ .Site.Params.jquery.js | default .Site.Data.default.jquery.js }}"></script>

@@ -2,7 +2,7 @@
   <section class="container" id="list">
       {{ $paginator := .Paginate (.Data.Pages.ByDate.Reverse) 10 }}
       {{ range $paginator.Pages }}
-        <div class="post-list-item-container z-depth-4">
+        <div class="post-list-item-container">
           <div class="center-align">
             <span><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
             <div class="left-align">
